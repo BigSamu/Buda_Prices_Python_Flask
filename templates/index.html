@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<h1 class="mt-3">Buda Prices</h1>
+<hr>
+
+<h2 class="bg-success text-white p-3">Welcome!</h2>
+
+<h5 class="my-3">Transaction greatest operations last 24 Hours (for each market): </h5>
+
+<div id="spinner-loader" class="d-flex align-items-center">
+  <div class="spinner-border" role="status"></div>
+  <strong class="mx-3 mb-0">Loading Data...</strong>
+</div>
+
+<div id='table-container'></div>
+{% endblock %}
