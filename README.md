@@ -2,9 +2,9 @@
 
 <!-- omit in toc -->
 
-# Buda Prices - Ruby Sinatra
+# Buda Prices - Python Flask
 
-A simple educational Ruby Sinatra web application that fetches data from [Buda API](https://api.buda.com/en/), an online Chilean cryptocurrency exchange market.
+A simple educational Python Flask web application that fetches data from [Buda API](https://api.buda.com/en/), an online Chilean cryptocurrency exchange market.
 
 ---
 
@@ -16,7 +16,7 @@ A simple educational Ruby Sinatra web application that fetches data from [Buda A
 
 ## Table of Contents
 
-- [Buda Prices - Ruby Sinatra](#buda-prices---ruby-sinatra)
+- [Buda Prices - Python Flask](#buda-prices---python-flask)
   - [Table of Contents](#table-of-contents)
   - [About The Project](#about-the-project)
   - [Technologies](#technologies)
@@ -61,9 +61,9 @@ The following technologies are used for the implementation of this project:
 [![HTML5][html5-badge]][html5-url]
 [![Javascript][javascript-badge]][javascript-url]
 [![JQuery][jquery-badge]][jquery-url]
-[![Ruby][ruby-badge]][ruby-url]
-[![RubyGems][ruby-gems-badge]][ruby-gems-url]
-[![Ruby Sinatra][ruby-sinatra-badge]][ruby-sinatra-url]
+[![Python][python-badge]][python-url]
+[![Jinja][jinja-badge]][jinja-url]
+[![Flask][flask-badge]][flask-url]
 [![Bootstrap][bootstrap-badge]][bootstrap-url]
 
 <p align="right">(<a href="#back-to-top">back to top</a>)</p>
@@ -82,11 +82,18 @@ The following technologies are used for the implementation of this project:
 
 ### Prerequisites
 
-`Ruby`, `Ruby Gems` and `Bundler` are required for the setup of this web application.
+`Python3` and a `pip3` are required for the setup of this web application.
 
-> Installation instructions [here][install-ruby-and-bundler].
+> Installation instructions [here][install-python-and-pip].
 
-> **NOTE:** at the momment of the implentation of this project `Ruby v2.7.4`, `RubyGems v3.1.6` and `bundler v2.1.4` were used. Since `Ruby v1.9`, `RubyGems` comes already included in its installation package (no need for a separate installation).
+For easy management of packages and environments `pipenv` is used. For installing this tool globally run:
+
+```sh
+pip3 install pipenv
+```
+
+> **NOTE:** At the time of the implementation of this project, `Python v3.11.2`, `pip v23.0.1` and `pipenv v2023.2.4` were used.
+
 
 <p align="right">(<a href="#back-to-top">back to top</a>)</p>
 
@@ -101,25 +108,31 @@ To get a copy of this project and run it in your local environment, follow the s
 1. Clone the repo
 
    ```sh
-   git clone https://github.com/BigSamu/Buda_Prices_Ruby_Sinatra.git
+   git clone https://github.com/BigSamu/Buda_Prices_Python_Flask.git
    ```
 
 2. Go into the repository
 
    ```sh
-   cd Buda_Prices_Ruby_Sinatra
+   cd Buda_Prices_Python_Flask
    ```
 
-3. Install required Ruby Gems
+3. Activate virtual environemnt
 
    ```sh
-   bundle install
+   pipenv shell
    ```
 
-4. Run application
+4. Install required pyhon packages or dependencies
 
    ```sh
-   bundle exec ruby main.rb
+   pipenv install
+   ```
+
+5. Run application
+
+    ```sh
+   python app.py
    ```
 
 <p align="right">(<a href="#back-to-top">back to top</a>)</p>
@@ -130,7 +143,7 @@ To get a copy of this project and run it in your local environment, follow the s
 
 ### Usage
 
-After succesfull installation, you will be able to check the WebApp in any browser by visiting the following URL address: [localhost:4567](http://localhost:4567/)
+After succesfull installation, you will be able to check the WebApp in any browser by visiting the following URL address: [localhost:5000](http://localhost:5000/)
 
 <p align="right">(<a href="#back-to-top">back to top</a>)</p>
 
@@ -260,6 +273,10 @@ Developed with ❤️ in Chile 🇨🇱
 <!-- Django -->
 [django-badge]: https://img.shields.io/badge/Django-092E20?logo=django&logoColor=fff&style=for-the-badge
 [django-url]: https://www.djangoproject.com/
+
+<!-- Flask -->
+[flask-badge]: https://img.shields.io/badge/Flask-000?logo=flask&logoColor=fff&style=for-the-badge
+[flask-url]: https://flask.palletsprojects.com/
 
 <!-- 4) Databases -->
 
